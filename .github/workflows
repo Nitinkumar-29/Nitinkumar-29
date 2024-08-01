@@ -1,0 +1,33 @@
+name: Update PR Merge Badge
+
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+  update-badge:
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.merged == true
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Update PR merge count
+        id: update-pr-merge-count
+        run: |
+          PR_COUNT=$(curl -s "https://api.github.com/search/issues?q=is:pr+repo:${{ github.repository }}+is:merged" | jq '.total_count')
+          echo "::set-output name=pr_count::$PR_COUNT"
+
+      - name: Update README
+        run: |
+          PR_COUNT=${{ steps.update-pr-merge-count.outputs.pr_count }}
+          sed -i "s/PR%20Merged-[0-9]*/PR%20Merged-${PR_COUNT}/" README.md
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "Update PR merge badge"
+          git push
