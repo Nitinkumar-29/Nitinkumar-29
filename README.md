@@ -13,6 +13,9 @@ I'm Nitin kumar, full stack developer 💻
 ### 🔝 Top Contributed Repo
 ![](https://github-contributor-stats.vercel.app/api?username=Nitinkumar-29&limit=5&theme=dark&combine_all_yearly_contributions=true)
 
+![PR Merge Badge](https://img.shields.io/badge/PR%20Merged-0-brightgreen)
+
+
 ---
 [![](https://visitcount.itsvg.in/api?id=Nitinkumar-29&icon=5&color=3)](https://visitcount.itsvg.in)
 
