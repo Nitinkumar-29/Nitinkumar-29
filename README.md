@@ -7,6 +7,14 @@ I'm Nitin kumar, full stack developer 💻
 ![](https://github-readme-streak-stats.herokuapp.com/?user=Nitinkumar-29&theme=dark&hide_border=false)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=Nitinkumar-29&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
 
+### 🎉 Hacktoberfest Badges
+<div style={{display:"flex"}}>
+<img src="https://assets.holopin.io/hf2024levels/level0-sloth-code-0-0-0-0.webp" alt="Hacktoberfest Registered" width="150"/>
+<img src="https://assets.holopin.io/hf2024levels/level1-sloth-code-0-0-0-0.webp" alt="Hacktoberfest Level 1" width="150"/>
+<img src="https://assets.holopin.io/hf2024levels/level2-sloth-code-0-0-0-0.webp" alt="Hacktoberfest Level 2" width="150"/>
+</div>
+
+
 ### ✍️ Random Dev Quote
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)
 
